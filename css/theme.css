@@ -1,0 +1,250 @@
+/*variaveis globais*/
+:root {
+    --bg-primary: #0b1120;
+    --bg-secondary: #111c30;
+    --bg-card: #17243a;
+
+    --accent: #3b82f6;
+    --accent-hover: #60a5fa;
+
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+
+    --border-color: #26364f;
+
+    --shadow-color: rgba(0, 0, 0, 0.25);
+    --glow-color: rgba(59, 130, 246, 0.18);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: "Segoe UI", Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+.text-primary {
+    color: var(--accent) !important;
+}
+
+.text-secondary,
+.text-muted {
+    color: var(--text-secondary) !important;
+}
+
+/*nav*/
+.navbar {
+    background: rgba(11, 17, 32, 0.92) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+    color: var(--text-primary) !important;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand:hover {
+    color: var(--accent) !important;
+}
+
+.nav-link {
+    color: var(--text-secondary) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-hover) !important;
+}
+
+
+/*carousel*/
+.carousel-item {
+	height: 75vh;
+    min-height: 400px;
+    max-height: 700px;
+    position: relative;
+}
+
+.carousel-item img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+}
+
+.carousel-control-prev, .carousel-control-next {
+    transition: opacity 0.3s ease;
+}
+
+/*secoes*/
+#perfil, #projetos, #contatos {
+    background-color: var(--bg-primary) !important;
+}
+
+#projetos {
+    background-color: var(--bg-secondary) !important;
+}
+
+section h2 {
+    letter-spacing: -0.5px;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background-color: var(--accent);
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+/*foto de perfil*/b
+.profile-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border: 4px solid var(--accent) !important;
+    box-shadow: 0 0 25px var(--glow-color) !important;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 35px var(--glow-color) !important;
+}
+
+/*cards*/
+.card {
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color) !important;
+    border-radius: 16px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent) !important;
+    box-shadow: 0 12px 30px var(--shadow-color), 0 0 15px var(--glow-color) !important;
+}
+
+.card-title, .card h4, .card h5, .card h6 {
+    color: var(--text-primary);
+}
+
+.card-title {
+    color: var(--text-secondary);
+}
+
+#projetos .card > img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+    transition: filter 0.3s ease;
+}
+
+#projetos .card:hover > img {
+    filter: brightness(1.12);
+}
+
+/*botoes*/
+.btn {
+    border-radius: 10px;
+    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+    box-shadow: 0 5px 18px var(--glow-color);
+}
+
+.btn-outline {
+    color: var(--accent-hover);
+    border-color: var(--accent);
+}
+
+.btn-outline:hover {
+    color: white;
+    background-color: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 5px 18px var(--glow-color);
+}
+
+/*devicon*/
+#perfil .card i[class*="devicon-"] {
+    transition: transform 0.3s ease;
+}
+
+#perfil .card:hover i[class*="devicon-"] {
+    transform: scale(1.12);
+}
+
+/*contatos*/
+#contatos .card {
+    padding: 20px;
+}
+
+#contatos .btn {
+    font-weight: 500;
+}
+
+/*footer*/
+footer {
+    background-color: var(--bg-secondary) !important;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary) !important;
+}
+
+/*responsividade*/
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 55vh;
+        min-height: 300px;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    section {
+        padding-top: 55px !important;
+        padding-bottom: 55px !important;
+    }
+}
+
+/*acessibilidade*/
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

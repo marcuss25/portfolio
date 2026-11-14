@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-	<title>Portfolio Profissional</title>
-	<style>
+	<title>Meu Portfólio</title>
+	<link rel="stylesheet" href="css/theme.css">
+	<!-- <style>
 		.carousel-item {
 			height: 95vh;
 		} 
@@ -14,13 +15,13 @@
 			height: 100%;
 			object-fit: cover;
 		}
-	</style>
+	</style> -->
 </head>
 <body class="bg-light">
 	<!--nav-->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
 		<div class="container">
-			<a class="navbar-brand fw-bold" href="#">JoaoSilva.dev</a>
+			<a class="navbar-brand fw-bold" href="#">Meu Portfólio</a>
 
 			<!--Botao para celular-->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -56,7 +57,7 @@
 		<!--Slides-->
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="imagens/slide1.png" class="d-block w-100" alt="Slide 1">
+				<img src="imagens/p1.png" class="d-block w-100" alt="Slide 1">
 			</div>
 			<div class="carousel-item">
 				<img src="imagens/slide2.png" class="d-block w-100" alt="Slide 2">
@@ -77,17 +78,17 @@
 	</div>
 	
 	<!--perfil-->
-	<section id="perfil" class="bg-light min-vh-100 d-flex align-itens-center py-5">
+	<section id="perfil" class="bg-light min-vh-100 d-flex align-items-center py-5">
 		<div class="container py-4">
-			<div class="row align-itens-center g-5">
+			<div class="row align-items-center g-5">
 				
 				<!--Coluna esquerda-->
 				<div class="col-lg-4 text-center">
-					<img src="imagens/perfil.png" alt="Foto de perfil" class="profile-img rounded-circle border border-4 border-white shadow img-fluid mb-3">
+					<img src="imagens/image1.jpg" alt="Foto de perfil" class="profile-img rounded-circle border border-4 border-white shadow img-fluid mb-3">
 
-					<h4 class="fw-bold mt-3 mb-1">Joao Silva</h4>
+					<h4 class="fw-bold mt-3 mb-1">Marcus</h4>
 					<p class="text-muted mb-2">Desenvolvimento de Sistemas</p>
-					<span class="badge bg-primary px-3 py-2">Portfolio academico</span>
+					<span class="badge bg-primary px-3 py-2">Portfolio profissional</span>
 				</div>
 
 				<!--Coluna direita-->
@@ -145,26 +146,26 @@
 										<div class="card-body">
 
 											<div class="d-flex align-items-center gap-3 mb-3">
-												<i class="devicon-html5-plain colored fs-2"></i>
+												<i class="devicon-react-plain colored fs-2"></i>
 												<div>
-													<div class="fw-semibold">HTML</div>
-													<small class="text-muted">Estrutura</small>
+													<div class="fw-semibold">React.js</div>
+													<small class="text-muted">Criacao de paginas web</small>
 												</div>
 											</div>
 											
+											<div class="d-flex align-items-center gap-3 mb-3">
+												<i class="devicon-javascript-plain colored fs-2"></i>
+												<div>
+													<div class="fw-semibold">JavaScript</div>
+													<small class="text-muted">Front-end e conexões</small>
+												</div>
+											</div>
+
 											<div class="d-flex align-items-center gap-3 mb-3">
 												<i class="devicon-css3-plain colored fs-2"></i>
 												<div>
 													<div class="fw-semibold">CSS</div>
 													<small class="text-muted">Estilo</small>
-												</div>
-											</div>
-
-											<div class="d-flex align-items-center gap-3 mb-3">
-												<i class="devicon-bootstrap-plain colored fs-2"></i>
-												<div>
-													<div class="fw-semibold">Bootstrap</div>
-													<small class="text-muted">Layout</small>
 												</div>
 											</div>
 										</div>
@@ -178,10 +179,18 @@
 										<div class="card-body">
 											
 											<div class="d-flex align-items-center gap-3 mb-3">
-												<i class="devicon-python-plain colored fs-2"></i>
+												<i class="devicon-csharp-plain colored fs-2"></i>
 												<div>
-													<div class="fw-semibold">Python</div>
-													<small class="text-muted">Algoritimos</small>
+													<div class="fw-semibold">C#</div>
+													<small class="text-muted">Back-end e API</small>
+												</div>
+											</div>
+											
+											<div class="d-flex align-items-center gap-3 mb-3">
+												<i class="devicon-mysql-plain colored fs-2"></i>
+												<div>
+													<div class="fw-semibold">MySQL</div>
+													<small class="text-muted">Banco de Dados</small>
 												</div>
 											</div>
 											
@@ -189,15 +198,7 @@
 												<i class="devicon-github-plain colored fs-2"></i>
 												<div>
 													<div class="fw-semibold">GitHub</div>
-													<small class="text-muted">Repositorios</small>
-												</div>
-											</div>
-											
-											<div class="d-flex align-items-center gap-3 mb-3">
-												<i class="devicon-vscode-plain colored fs-2"></i>
-												<div>
-													<div class="fw-semibold">VS Code</div>
-													<small class="text-muted">Ambiente de Desenvolvimento</small>
+													<small class="text-muted">Projetos</small>
 												</div>
 											</div>
 										
@@ -227,13 +228,13 @@
 			<div class="row g-4">
 				<div class="col-md-6 col-xl-4">
 					<div class="card h-100 shadow-sm border-0 rounded-4">
-						<img src="imagens/p1.png" alt="Portfolio-imagem">
+						<img src="imagens/mei-branco.png" alt="bridgemei-imagem">
 						<div class="card-body d-flex flex-column">
-							<h5 class="card-title">Portfólio Pessoal</h5>
+							<h5 class="card-title">BridgeMEI | Gestão Financeira</h5>
 							<p class="card-text text-muted flex-grow-1">
-								Site desenvolvido para apresentar perfil profissional, tecnologias estudadas e projetos realizados.
+								Projeto desenvolvido com Enzo para ajudar Micro Empreendedores (MEI) na gestão do negocio de forma simplificada, sem realizar o calculo de impostos.
 							</p>
-							<a href="#" class="btn btn-outline-primary mt-auto">Ver Projeto</a>
+							<a href="https://github.com/marcuss25/bridgemei" target="_blank" class="btn btn-outline-primary mt-auto">Ver Projeto</a>
 						</div>
 					
 					</div>
@@ -241,13 +242,13 @@
 				
 				<div class="col-md-6 col-xl-4">
 					<div class="card h-100 shadow-sm border-0 rounded-4">
-						<img src="imagens/p2.png" alt="Sistema-python">
+						<img src="imagens/menu.png" alt="sistema-biblioteca">
 						<div class="card-body d-flex flex-column">
-							<h5 class="card-title">Sistema em Python</h5>
+							<h5 class="card-title">Sistema de Biblioteca</h5>
 							<p class="card-text text-muted flex-grow-1">
-								Aplicação desenvolvida em Python com foco em lógica de programação, entrada de dados e processamento de informações.								
+								Aplicação desenvolvida em C++
 							</p>
-							<a href="#" class="btn btn-outline-primary mt-auto">Ver Projeto</a>
+							<a href="https://github.com/marcuss25/biblioteca" target="_blank" class="btn btn-outline-primary mt-auto">Ver Projeto</a>
 						</div>
 					
 					</div>
@@ -278,7 +279,7 @@
 			<div class="text-center mb-5">
 				<h2 class="text-primary fw-bold">Contatos</h2>
 				<p class="text-muted">
-					Aberto a oportunidades, projetos e conexoes na area de TI.
+					Aberto a oportunidades, projetos e conexões na area de TI.
 				</p>
 			</div>
 
@@ -294,13 +295,13 @@
 
 						<!--Links para contato-->
 						<div class="d-grid gap-3">
-							<a href="mailto:joaosilva@email.com" class="btn btn-outline-primary btn-lg">Enviar e-mail</a>
-							<a href="https://github.com/" target="_blank" class="btn btn-dark btn-lg">GitHub</a>
-							<a href="https://linkedin.com/" target="_blank" class="btn btn-primary btn-lg">LinkedIn</a>
+							<a href="mailto:sobralvinicius8@gmail.com" class="btn btn-outline-primary btn-lg">Enviar e-mail</a>
+							<a href="https://github.com/marcuss25" target="_blank" class="btn btn-dark btn-lg">GitHub</a>
+							<a href="https://linkedin.com/in/marcuss-silva" target="_blank" class="btn btn-primary btn-lg">LinkedIn</a>
 
 							<hr class="my-4">
 							<p class="text-muted mb-0">
-								<span class="fw-semibold">Localizacao: </span>Sao Paulo/SP
+								<span class="fw-semibold">Localizacao: </span>Sorocaba/SP
 							</p>
 						</div>
 					</div>
@@ -312,10 +313,10 @@
 	</section>
 
 	<!--footer-->
-	<footer class="bg-dark text-light py-4">
+	<footer class="py-4">
 		<div class="container text-center">
-			<p class="mb-1">© 2026 - Portfólio Profissional</p>
-			<small>Desenvolvido com HTML, CSS e Bootstrap</small>
+			<p class="mb-1">marcuss25 © 2026 - Meu Portfólio</p>
+			<small>Desenvolvido com HTML, CSS e Bootstrap por Marcus</small>
 		</div>
 	</footer>
 
